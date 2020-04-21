@@ -1,3 +1,9 @@
+---
+layout: post
+title: "MANGO - Linux Easy Hack The Box writeup"
+date: 2020-04-21 12:00:00 +0000
+---
+
 Mango - Linux
 
 # Machine Details:
