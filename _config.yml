@@ -1,6 +1,6 @@
 title: 'HackLog'
 description: "Write ups from various HTB / CTF / VulnHub"
-baseurl: "/hacklog"
+baseurl: "/hacklog/"
 url: "https://achute.github.io"
 header_pages:
   - index.md
