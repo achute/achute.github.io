@@ -1,6 +1,6 @@
 ---
-title: /
+title: ./hacklog.py
 layout: home
 permalink: /
 ---
-# dev/random > blog.py
+# dev/random > ./hacklog.py
