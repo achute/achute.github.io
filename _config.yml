@@ -6,6 +6,18 @@ header_pages:
   - index.md
   - about.md
 
-footer: 'follow us on <a href="https://twitter.com/achute">twitter</a>'
+bye_message: '> follow us on <a href="https://twitter.com/achute">twitter</a> <'
 
-theme: jekyll-theme-hacker
+# Header settings
+nick: "achute"
+mail:
+    domain: "protonmail"
+    ext: "com"
+source_code:
+    server: "github.com"
+    nick: "achute"
+# fingerprint_key: "xx"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
