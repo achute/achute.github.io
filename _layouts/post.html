@@ -10,7 +10,7 @@ layout: page
         {% if page.author %} • {{ page.author }}{% endif %}
         {% if page.meta %} • {{ page.meta }}{% endif %}
         •
-        {% for category in page.tags %}<span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
+        {% for category in page.tags %}<span><a href="{{ site.url }}category/#{{ category }}" class="reserved">{{ category }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
     </p>
   </header>
 
@@ -19,7 +19,7 @@ layout: page
   </article>
 
 	<p class="feed-recomendation">
-		Subscribe?  <a href="{{ site.baseurl }}feed.xml">feed</a>
+		Subscribe?  <a href="{{ site.url }}feed.xml">feed</a>
 	</p>
 
 
