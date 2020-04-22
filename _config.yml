@@ -1,15 +1,16 @@
-title: 'HackLog'
-description: "Write ups from various HTB / CTF / VulnHub"
-baseurl: "/hacklog/"
+title: "Achute's Log"
+description: "Random Dev/Sec thoughts & Write ups from various HTB/CTF/VulnHub"
+baseurl: "/"
 url: "https://achute.github.io"
 header_pages:
   - index.md
+  - hacklog.md
   - about.md
 
-bye_message: '> follow us on <a href="https://twitter.com/achute">twitter</a> <'
+bye_message: '> follow me on <a href="https://twitter.com/achute">twitter</a> <'
 
 # Header settings
-nick: "achute"
+nick: "Achutes Log"
 mail:
     domain: "protonmail"
     ext: "com"

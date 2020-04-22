@@ -1,16 +1,16 @@
 ---
-title: ./hacklog.py
+title: ./HomePage.rb
 layout: page
 permalink: /
 ---
+
+Welcome To Achute's Log
+
 # dev/random > ./hacklog.py
 
-Welcome To HackLog
+Collection of various Dev / Security Musings.
+Writeup on various CTFs / HTB
 
-<ul class="posts">
-    {% for post in site.categories.posts %}
-        <li>
-            <a class="reserved" href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-    {% endfor %}
-</ul>
+# dev/bio > ./about.me
+
+Security Researcher

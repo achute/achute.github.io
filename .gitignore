@@ -1,0 +1,5 @@
+Gemfile
+Gemfile.lock
+.ruby-version
+.DS_Store
+.jekyll-cache

@@ -1,22 +1,22 @@
 ---
 layout: post
 title: "MANGO - Linux Easy Hack The Box writeup"
-date: 2020-04-21 12:00:00 +0000
+date: 2020-04-21
 categories:
     - htb
     - linuxbox
 tags:
     - easy_box
     - linux_box
+    - htb
 ---
-
-# MANGO - Linux Easy Hack The Box writeup
 
 ## Machine Details:
 **IP Address :** 10.10.10.162
 
 ## Flags:
 User: 79bf31c6
+
 Root: 8a8ef79a
 
 ## Hints:
