@@ -10,7 +10,7 @@ header_pages:
 bye_message: '> follow me on <a href="https://twitter.com/achute">twitter</a> <'
 
 # Header settings
-nick: "Achutes Log"
+nick: "achute"
 mail:
     domain: "protonmail"
     ext: "com"

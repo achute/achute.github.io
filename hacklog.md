@@ -9,10 +9,20 @@ permalink: /hacklog/
 Collection of various Dev / Security Musings.
 Writeup on various CTFs / HTB
 
-<ul class="posts">
+<ol class="posts">
     {% for post in site.posts %}
         <li>
-            <a class="reserved" href="{{ post.url }}">{{ post.title }}</a> :: {{ post.date}} @ { {{ post.categories }} }
+            <b>
+            <a class="reserved" href="{{ post.url }}">{{ post.title }}</a>
+            </b>
+            <br/>
+            {{ post.date | date: "%b %d, %Y"}} @
+            {
+            {% for cat in post.tags %}
+              <a class="reserved" href="{{ site.baseurl }}category/#{{cat}}">{{cat}}</a>{% if forloop.last == false %},{% endif %}
+
+            {% endfor %}
+            }
         </li>
     {% endfor %}
-</ul>
+</ol>
