@@ -19,7 +19,7 @@ Writeup on various CTFs / HTB
             {{ post.date | date: "%b %d, %Y"}} @
             {
             {% for cat in post.tags %}
-              <a class="reserved" href="{{ site.url }}category/#{{cat}}">{{cat}}</a>{% if forloop.last == false %},{% endif %}
+              <a class="reserved" href="{{ site.url }}/category/#{{cat}}">{{cat}}</a>{% if forloop.last == false %},{% endif %}
 
             {% endfor %}
             }
