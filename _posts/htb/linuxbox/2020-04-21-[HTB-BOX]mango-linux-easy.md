@@ -121,12 +121,12 @@ mango : h3mXK8RhU~f{]f5H
 
 Screen-Shot of the script output.
 
-![f4bc96690381ae8e708dfd9567e1a274.png](../_res/f4bc96690381ae8e708dfd9567e1a274.png)
+![f4bc96690381ae8e708dfd9567e1a274.png](/assets/f4bc96690381ae8e708dfd9567e1a274.png)
 
 
 Logging into the website gave:
 
-![38e6dd193b053e4ddcbe00572afa2b08.png](../_res/38e6dd193b053e4ddcbe00572afa2b08.png)
+![38e6dd193b053e4ddcbe00572afa2b08.png](/assets/38e6dd193b053e4ddcbe00572afa2b08.png)
 
 # User:
 

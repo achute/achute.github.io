@@ -1,6 +1,6 @@
 title: "Achute's Log"
 description: "Random Dev/Sec thoughts & Write ups from various HTB/CTF/VulnHub"
-baseurl: "https://achute.github.io/"
+baseurl: "/"
 url: "https://achute.github.io"
 header_pages:
   - index.md
