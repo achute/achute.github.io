@@ -21,6 +21,7 @@ Root: 8a8ef79a
 
 ## Hints:
 Name of the Machine - might be related to MongoDB.
+
 SSL certificates
 
 
@@ -28,6 +29,10 @@ SSL certificates
 * Inspect the HTTPs website - certificates
 * Make a habit of registering the hostnames locally.
 * Look more into the home folder of the user, likely contains some hint
+
+# References:
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection
+https://book.hacktricks.xyz/pentesting-web/nosql-injection
 
 # Recon:
 ## nmap
